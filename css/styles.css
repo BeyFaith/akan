@@ -1,0 +1,16 @@
+h1{
+  color:peru;
+  font-family:'arial','serif';
+  
+  text-align:center;
+}
+h2{
+  text-align:center;
+  
+  color:saddlebrown;
+  
+}
+
+#play{
+  margin-top:35px;
+}
