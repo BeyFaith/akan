@@ -1,0 +1,3 @@
+function akan(){
+  var day =
+}
