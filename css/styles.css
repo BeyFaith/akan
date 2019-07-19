@@ -10,7 +10,14 @@ h2{
   color:saddlebrown;
   
 }
-
+h3{
+  color:#A6CB45;
+  
+}
+#intro{
+  background-color:#FEFCD7
+}
 #play{
   margin-top:35px;
+  background-color: #FEFCD7;
 }
