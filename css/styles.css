@@ -18,9 +18,16 @@ p{
   color: slategrey;
 }
 #intro{
-  background-color:#FEFCD7
+  background-color:#FEFCD7;
+  padding:15px 15px
 }
 #play{
   margin-top:35px;
   background-color: #FEFCD7;
+  padding:15px 15px
+}
+
+}
+#last{
+  text-align:center;
 }
