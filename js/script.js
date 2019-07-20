@@ -8,11 +8,11 @@ function akan(){
   var day = parseFloat(document.getElementById("day").value);
   console.log(day);
   
-  var century = (year-1)/100+1;
+  var century = (year-1)/100*4;
   console.log(century);
   
-  var birthday = Math.round( ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7) ;
-  console.log(birthday);
+  var birthday = (century/4-2*century-1 + 5*year/4 + 26*(month+1)/10 +day) % 7;  ;
+  console.log(Math.round(birthday));
 
   var gender = document.getElementById("gender").value;
   console.log(gender);
