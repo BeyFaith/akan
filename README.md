@@ -9,14 +9,14 @@ Take this project as a game. The game is all about the akan names. Akan names ar
 * Click to choose your gender.
 * Lastly, click on the submit button to get your Akan name which will be displayed below.
 
-##BDD
-###Behaviour
+## BDD
+### Behaviour
 * Enter your birthday information
 * Choose gender
-###InputExample
+### InputExample
 * Day, Month and Year
 * Male or Female
-###Output
+### Output
 * Akan Name
 
 
