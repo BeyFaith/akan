@@ -11,7 +11,7 @@ function akan(){
   var century = (parseFloat(year)-1)/100 +1;
   console.log(century);
   
-  var birthday = Math.round(( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7) ;
+  var birthday = Math.round(( ( (century/4) -2*century-1) + ((5*parseInt(year)/4) ) + ((26*(month+1)/10)) + day ) % 7) ;
   console.log(birthday);
 
   var gender = document.getElementById("gender").value;
@@ -20,61 +20,24 @@ function akan(){
   var male= ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   
   var female = ["Akosua","Adwoa","Abenaa","Akua","Yaa", "Afua","Ama"];
-  
-  if(birthday===0 && gender==="male") {
-    document.getElementById("display").innerHTML = male [0];
-  }
 
-  if(birthday=== 1 && gender==="male") {
-    document.getElementById("display").innerHTML = male [1];
+  if(year <= 0) {
+    alert("Wrong year, enter the correct year!");
   }
-
-  if(birthday===2 && gender==="male") {
-    document.getElementById("display").innerHTML = male [2]
+  else {
+    if(gender==="male") {
+      document.getElementById("display").innerHTML = male [birthday];
+      if(birthday ===7) {
+        document.getElementById("display").innerHTML = male [0]
+      }
+    }
+    else {
+      document.getElementById("display").innerHTML = female [birthday];
+      if(birthday ===7) {
+        document.getElementById("display").innerHTML = female [0];
+      }
+    }
   }
-
-  if(birthday===3 && gender==="male") {
-    document.getElementById("display").innerHTML = male [3]
-  }
-
-  if(birthday===4 && gender==="male") {
-    document.getElementById("display").innerHTML = male [4]
-  }
-
-  if(birthday===5 && gender==="male") {
-    document.getElementById("display").innerHTML = male [5]
-  }
-
-  if(birthday===6 && gender==="male") {
-    document.getElementById("display").innerHTML = male [6]
-  }
-  if(birthday===0 && gender==="female") {
-    document.getElementById("display").innerHTML = female [0]
-  }
-  if(birthday===1 && gender==="female") {
-    document.getElementById("display").innerHTML = female [1]
-  }
-  if(birthday===2 && gender==="female") {
-    document.getElementById("display").innerHTML = female [2]
-  }
-  if(birthday===3 && gender==="female") {
-    document.getElementById("display").innerHTML = female [3]
-  }
-  if(birthday===4 && gender==="female") {
-    document.getElementById("display").innerHTML = female [4]
-  }
-  if(birthday===5 && gender==="female") {
-    document.getElementById("display").innerHTML = female [5]
-  }
-  if(birthday===6 && gender==="female") {
-    document.getElementById("display").innerHTML = female [6]
-  }
-
-
-  
-  
-
-
-  
   
 }
+  
