@@ -29,7 +29,7 @@ Take this project as a game. The game is all about the akan names. Akan names ar
 
 ## Support and contact details
 Thank you so much for taking your time to read my README , please feel free to contribute to my work as it has an open license(check below). For any questions or concerns you can email me at fryumugabe@gmail.com.
-You can check it out here:
+You can check it out here:https://beyfaith.github.io/akan/
 ### License
 *GPL*
 Copyright (c) 2019 Bey Faith.
